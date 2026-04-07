@@ -1,0 +1,20 @@
+# Node
+node_modules/
+npm-debug.log
+
+# Terraform
+**/.terraform/*
+*.tfstate
+*.tfstate.*
+crash.log
+crash.*.log
+terraform.tfvars
+*.tfvars
+
+# Editor / OS
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Sensitive files
+*.pem
