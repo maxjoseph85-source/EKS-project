@@ -75,3 +75,24 @@ variable "min_size" {
   type        = number
   default     = 1
 }
+variable "jenkins_instance_type" {
+  description = "Instance type for Jenkins EC2"
+  type        = string
+  default     = "t3.medium"
+}
+
+variable "jenkins_volume_size" {
+  description = "Root volume size for Jenkins EC2"
+  type        = number
+  default     = 20
+}
+
+variable "my_ip_cidr" {
+  description = "Your public IP in CIDR format for SSH and Jenkins access"
+  type        = string
+}
+
+variable "key_name" {
+  description = "AWS EC2 key pair name"
+  type        = string
+}
